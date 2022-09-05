@@ -19,10 +19,10 @@ contract JimboNFT is ERC721, Ownable {
     string public hiddenMetadataUri;
 
     constructor() payable ERC721('JimboNFT', 'JIMBO') {
-        mintPrice = 0.069 ether;
+        mintPrice = 0 ether;
         totalSupply = 0;
-        maxSupply = 2000;
-        maxPerWallet = 10;
+        maxSupply = 1000;
+        maxPerWallet = 69;
         setHiddenMetadataUri("ipfs://Qma2duqEcruZ5XSz8gSq9NG2fabtY3ENbkyJvdwro3NFu8/hidden.json");
     }
 

@@ -60,29 +60,28 @@ function App() {
       <div className="App">
         {/* Left Side */}
         <Flex justify="space-between" align="center" padding="40px">
-          <Flex justify="space-around" width="auto" padding="0 45px">
-            <Link href="https://www.linkedin.com/">
-              <Image src={Linkedin}/>
-            </Link>
-          </Flex>
-          <Flex justify="space-around" width="auto" padding="0 45px">
+          <Flex justify="space-around" width="auto" padding="0 25px">
             <Link href="https://www.opensea.io">
-              <Image src={Opensea}/>
+              <Image height="5vh" src={Opensea}/>
             </Link>
           </Flex>
-          <Flex justify="space-around" width="auto" padding="0 45px">
-            <Link href="https://discord.gg">
-              <Image src={Discord}/>
+          <Flex justify="space-around" width="auto" padding="0 25px">
+            <Link href="https://discord.gg/psg3qjfq">
+              <Image height="5vh" src={Discord}/>
             </Link>
           </Flex>
-          <Flex justify="space-around" width="auto" padding="0 45px">
+          <Flex justify="space-around" width="auto" padding="0 25px">
             <Link href="https://www.twitter.com">
-              <Image src={Twitter}/>
+              <Image height="5vh" src={Twitter}/>
+            </Link>
+          </Flex>
+          <Flex justify="space-around" width="auto" padding="0 25px">
+            <Link href="https://www.linkedin.com/">
+              <Image height="5vh" src={Linkedin}/>
             </Link>
           </Flex>
         
         {/*Right Side */}
-        {/* <Flex justify="space-between" align="center" width="40%" padding="30px"> */}
           <Spacer />
           {isConnected ? (
             <Box margin="0 15px">{connectedWallet}</Box>
@@ -94,7 +93,7 @@ function App() {
               color="white"
               cursor="pointer"
               fontFamily="inherit"
-              padding="20px 40px"
+              padding="15px 25px"
               margin="0 15px"
               onClick={connectAccount}>
               
@@ -114,6 +113,7 @@ function App() {
                 paddingBottom= "20px" 
                 src={Jimbo}
               />
+              <p>JIMBO : Just Jimbo</p>
             </div>
             {isConnected ? (
               <div>
@@ -174,8 +174,8 @@ function App() {
               </div>
             ) : (
               <Text
-                marginTop="70px"
-                fontSize="30px"
+                marginTop="20px"
+                fontSize="25px"
                 letterSpacing="-5.5%"
                 fontFamily="VT323"
                 textShadow="0 3px #000000"

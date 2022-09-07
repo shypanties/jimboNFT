@@ -22,7 +22,7 @@ contract JimboNFT is ERC721, Ownable {
         mintPrice = 0 ether;
         totalSupply = 0;
         maxSupply = 1000;
-        maxPerWallet = 69;
+        maxPerWallet = 15;
         setHiddenMetadataUri("ipfs://QmbjVcC7CGQi3DjJcPbbioULim8hmhqLdWnmWTjJuNFnFA/0.json");
     }
 
